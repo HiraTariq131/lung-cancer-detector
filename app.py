@@ -29,7 +29,6 @@ input_data = pd.DataFrame([{
     'SHORTNESS OF BREATH': 1 if breath == 'Yes' else 0,
     # ... aur baaki features bhi isi tarah
 }])
-
     prediction = model.predict(input_data)
     if prediction[0] == 1:
         st.error("You might have lung cancer.")
